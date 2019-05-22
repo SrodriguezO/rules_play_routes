@@ -52,6 +52,7 @@ deploy:
       condition: $DOC_VERSION = true && $TRAVIS_OS_NAME = linux
   - provider: releases
     skip_cleanup: true
+    api_key: $GITHUB_AUTH
     files: '*/target/**/*.jar'
     file_glob: true
     on:
