@@ -53,8 +53,7 @@ deploy:
       condition: $DOC_VERSION = true && $TRAVIS_OS_NAME = linux
   - provider: releases
     skip_cleanup: true
-    api_key:
-      secure: $SECURE_GITHUB_AUTH
+    api_key: $GITHUB_AUTH
     file: 'bazel-out/k8-fastbuild/bin/play-routes-compiler/play-routes-compiler_deploy.jar'
     on:
       branch: master
