@@ -102,6 +102,8 @@ object CommandLinePlayRoutesCompiler {
       }
     }
 
+    println("Hello")
+
     if (didAllSucceed) {
       System.exit(0)
     } else {
