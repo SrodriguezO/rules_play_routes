@@ -37,7 +37,7 @@ before_install:
   - cat .bazelrc.travis >> .bazelrc
 script:
   - ./tools/skylint.sh
-  - ./test/run_all_tests.sh ci
+  #- ./test/run_all_tests.sh ci
   - bazel build play-routes:play-routes-docs
   - bazel shutdown
 before_deploy:
