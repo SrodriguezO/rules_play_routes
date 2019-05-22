@@ -57,4 +57,5 @@ deploy:
     file: 'bazel-out/k8-fastbuild/bin/play-routes-compiler/play-routes-compiler_deploy.jar'
     on:
       tags: true
+      branch: master
 
